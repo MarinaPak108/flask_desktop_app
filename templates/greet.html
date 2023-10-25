@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    h2 {
+        text-align: center;
+      }
+  a:link, a:visited {
+        background-color: #6f36f4;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+      
+      a:hover, a:active {
+        background-color: rgb(0, 255, 174);
+      }
+  body {margin:25px;}
+
+  div.polaroid {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+  }
+
+  div.container {
+    text-align: center;
+    padding: 10px 20px;
+  }
+</style>
+</head>
+<body>
+
+<h2>find your phrase of the day</h2>
+
+<div class="polaroid">
+  <img img src="{{ url_for('static', filename=img) }}" style="width:100%">
+  <div class="container">
+  <p>{{phrase}}</p>
+  </div>
+</div>
+<div class="row">
+  <a href="{{url_for('home')}}">HOME</a>
+  <a href="{{url_for('greet', file ='%s'%file, name = '%s'%name )}}">TRY AGAIN</a>
+</div>
+
+</body>
+</html>
