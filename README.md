@@ -6,7 +6,7 @@ works with local names.xlsx file in "phrases" folder to show categories and get 
 
 also works with folders "a" ... "i" to show random image according to category
 
-Flask==3.0.0
-flaskwebgui==1.0.8
-openpyxl==3.1.2
-Jinja2==3.1.2
+Flask==3.0.0<br>
+flaskwebgui==1.0.8<br>
+openpyxl==3.1.2<br>
+Jinja2==3.1.2<br>
